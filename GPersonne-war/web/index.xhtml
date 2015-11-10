@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Register Page</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <fieldset>
+        <table>
+         
+            <legend>Civil :</legend>
+            <tr><td>Firstname :</td><td><h:inputText value="#{personBean.firstName}"/></td></tr>
+            <tr><td>Lastname :</td><td><h:inputText value="#{personBean.lastName}"/></td></tr>
+            <tr><td>Birth date :</td><td><h:inputText value="#{personBean.birthDate}"/></td></tr>
+            <tr><td>Title :</td><td><h:inputText value="#{personBean.title}"/></td></tr>
+            <tr><td>Full Title :</td><td><h:inputText value="#{personBean.fulltitle}"/></td></tr>
+        </table>
+            </fieldset>
+            <tr><td><h:commandButton value="Add" action="#{personBean.addPersonStatus()}"/></td></tr>
+            
+        </h:form>
+    </h:body>
+</html>
+
